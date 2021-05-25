@@ -12,3 +12,5 @@ https://yussefrafat.github.io/Run-Buddy/
 
 ##Contribution
 Made with ❤️ by Yussef Rafat
+
+### ©️2019 Run Buddy, Inc 
