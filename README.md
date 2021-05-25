@@ -1,4 +1,4 @@
-# Run-Buddy
+# Run-Buddy Inc.
 
 ## Pupose 
 A website that offers fitness training services.
