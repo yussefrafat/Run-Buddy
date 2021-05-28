@@ -16,6 +16,15 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url(../images/hero-bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-image: fixed;
+    background-position: 80%;
+
 }
 header h1 {
     font-weight: bold;
@@ -46,6 +55,13 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 footer {
@@ -143,14 +159,17 @@ section {
     font-size: 16px;
 }
 
+.hero-form button:hover {
+    background-color: #39a6b2;
+}
+
 
 .intro p {
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
     font-size: 20px;
-    margin:0 auto;
-    text-align: center;
+    margin: 0 auto;
 
 }
 
@@ -184,11 +203,22 @@ section {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display:flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+.step:last-child {
+    border-bottom: 1px solid #39a6b2;
+}
+
+.step:nth-child(even) {
+    border-bottom: 1px solid #39a6b2;
+  }
+
+.step:not(last-child) {
+    border-bottom: 1px solid #39a6b2;
 }
 
 .step h3 {
@@ -343,6 +373,11 @@ section {
     font-size: 16px;
 }
 
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+}
+
 .contact-form{
     color: white;
 }
@@ -359,6 +394,7 @@ section {
     header {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
 
     header h1 {
@@ -462,3 +498,65 @@ section {
         order: 3;
     }
 }
+
+header h1 { 
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+header nav ul li a {
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.hero-cta h2 {
+    text-shadow: rgba(0,0,0,0.5);
+}
+
+.hero-form {
+    background-color: rgba(252,225,56,0.8);
+    box-shadow: rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+
+.form-input {
+    border-radius: 10px;
+    background-color: rgba(225,225,255,0.75);
+    outline: none;
+}
+
+.form-input:focus {
+    background-color: rgba(225,225,255,1);
+}
+
+.hero-form button {
+    border-radius: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    border-radius: 10px;
+    background-color: rgba(225,225,255,0.75);
+    outline: none;
+}
+
+.contact-form input:focus, .contact-form textarea {
+    background-color: rgba(225,225,255,1);
+}
+
+.contact-form button {
+    border-radius: 10px;
+}
+
+.intro {
+    text-align: center;
+}
+
+
+  .intro h2 {
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid;
+    border-color: #fce138;
+    display: inline-block;
+}
+
